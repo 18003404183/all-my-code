@@ -1,0 +1,32 @@
+-- Active: 1697553750079@@127.0.0.1@3306@lianxi1
+
+SHOW DATABASES;
+USE LIANXI1;
+SELECT DATABASE();
+
+SHOW TABLES;
+
+CREATE TABLE TB_GOODS(
+                    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                    TITLE VARCHAR(100),
+                    PRICE INT
+);
+CREATE TABLE TB_ORDER(
+                    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                    PAYMENT  DOUBLE,
+                    PAYMENT_TYPR  TINYINT,
+                    STATUS TINYINT
+);
+CREATE TABLE TB_GOOD_ORDER(
+                    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                    ORDER_ID INT,
+                    GOODES_ID INT,
+                    COUNT INT
+);
+
+SHOW TABLES;
+
+ALTER TABLE tb_good_order ADD CONSTRAINT FK_ORDER_ID FOREIGN KEY(ORDER_ID) REFERENCES tb_order(ID);
+ALTER TABLE tb_good_order ADD CONSTRAINT FK_GOODS_ID FOREIGN KEY(GOODES_ID) REFERENCES tb_goods(ID);
+
+

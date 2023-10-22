@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/a/a.iml" filepath="$PROJECT_DIR$/a/a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle/circle.iml" filepath="$PROJECT_DIR$/circle/circle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello/hello.iml" filepath="$PROJECT_DIR$/hello/hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/russan/russan.iml" filepath="$PROJECT_DIR$/russan/russan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scand/scand.iml" filepath="$PROJECT_DIR$/scand/scand.iml" />
+    </modules>
+  </component>
+</project>
